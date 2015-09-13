@@ -1372,6 +1372,9 @@ function EngInventory_OnEvent(event)
 				if (EngInventoryConfig[ENGINVENTORY_PLAYERID]["tradeskill_items"] == nil) then
 					EngInventoryConfig[ENGINVENTORY_PLAYERID]["tradeskill_items"] = {};
 				end
+				if ( EngInventoryConfig[ENGINVENTORY_PLAYERID]["tradeskill_production"] == nil ) then
+					EngInventoryConfig[ENGINVENTORY_PLAYERID]["tradeskill_production"] = {};
+				end
 
 				EngInventoryConfig[ENGINVENTORY_PLAYERID]["trades"][tradeskillName] = {};	-- wipe it out, we're refreshing it now anyway
 
